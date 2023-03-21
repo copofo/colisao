@@ -1,0 +1,124 @@
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+
+
+
+
+body{
+  height: 100%;
+}
+
+
+
+#container{
+  
+  
+  height: 100%;
+  
+  
+}
+
+
+
+#canvas{
+  
+  width: 25em;
+  height: 32em;
+  border: 0.09em solid black;
+  
+  
+  
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  left: 0;
+  
+  margin: auto;
+  
+  
+}
+
+
+
+#setas{
+  
+  
+  width: 12.5em;
+  
+  height: 12.5em;
+  
+  border: 0.09em solid black;
+  
+  position: absolute;
+  
+  bottom: 1.7em;
+  
+  left: 0.4em;
+  
+}
+
+div #cima, #baixo, #esquerda, #direita{
+  width: 3.5em;
+  height: 3.5em;
+  border: 0.09em solid black;
+}
+
+#cima {
+  
+  position: absolute;
+  
+  top: 0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  
+}
+
+#baixo {
+  
+  position: absolute;
+  bottom: 0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  
+}
+
+#esquerda {
+  
+  position: absolute;
+  left: 0.5em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  
+  
+}
+
+#direita{
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.5em;
+  
+  margin: auto;
+  
+}
+
+.dir{
+  user-select: none;
+  background-color: blue;
+}
+
+.dir:active{
+  
+  background-color: red;
+}
