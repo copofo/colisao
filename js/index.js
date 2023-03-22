@@ -67,6 +67,7 @@ function updateBlock(){
 
 
 f.c3().addEventListener('touchstart', ()=>{
+  f.c3().style.background = "black"
   speed = 0.35;
   speed2 = 1;
 })
@@ -74,40 +75,49 @@ f.c3().addEventListener('touchstart', ()=>{
 f.c3().addEventListener('touchend', ()=>{
   speed = 0;
   speed2 = 0;
+  f.c3().style.background = "gray"
 })
 
 f.top().addEventListener('touchstart', ()=>{
   movTop = true
+  f.top().style.background = "black"
 })
 
 
 f.left().addEventListener('touchstart', ()=>{
   movLeft = true
+  f.left().style.background = "black"
 })
 
 f.bottom().addEventListener('touchstart', ()=>{
   movBottom = true
+  f.bottom().style.background = "black"
 })   
 
 f.right().addEventListener('touchstart', ()=>{
   movRigth = true
+  f.right().style.background = "black"
 })
 
 f.top().addEventListener('touchend', ()=>{
   movTop = false
+  f.top().style.background = "gray"
 })
 
 
 f.left().addEventListener('touchend', ()=>{
   movLeft = false
+  f.left().style.background = "gray"
 })
 
 f.bottom().addEventListener('touchend', ()=>{
   movBottom = false
+  f.bottom().style.background = "gray"
 })   
 
 f.right().addEventListener('touchend', ()=>{
   movRigth = false
+  f.right().style.background = "gray"
 })
 
 

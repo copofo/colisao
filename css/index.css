@@ -121,10 +121,7 @@ div #cima, #baixo, #esquerda, #direita{
   
 }
 
-.dir:active{
-  
-  background-color: black;
-}
+
 
 #circulos{
   width: 45vw;
@@ -157,9 +154,7 @@ div #cima, #baixo, #esquerda, #direita{
   user-select: none;
 }
 
-.cir:active{
-  background-color: black;
-}
+
 
 
 
@@ -256,21 +251,21 @@ div #cima, #baixo, #esquerda, #direita{
 @media (max-width: 600px){
 
   div #cima, #baixo, #esquerda, #direita{
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     border: 0.09em solid black;
   }
 
   #cima {
   
-    top: 2em;
+    top: 1.5em;
     
   }
   
   #baixo {
     
     
-    bottom: 2em;
+    bottom: 1.5em;
     
     
   }
@@ -295,9 +290,9 @@ div #cima, #baixo, #esquerda, #direita{
 
   .cir{
   
-    width: 2.5em;
+    width: 3em;
     
-    height: 2.5em;
+    height: 3em;
     
     
   }
@@ -331,30 +326,30 @@ div #cima, #baixo, #esquerda, #direita{
   #x{
     
     
-    font-size: 1.5em;
+    font-size: 2em;
     
     
   }
 
   #c1{
-    top: 2em;
+    top: 1.5em;
     
   }
   
   #c2{
     
-    right: 1.2em;
+    right: 1em;
     
   }
   
   #c3{
-    bottom: 2em;
+    bottom: 1.5em;
  
   }
   
   #c4{
     
-    left: 1.2em;
+    left: 1em;
     
   }
 
