@@ -263,14 +263,14 @@ div #cima, #baixo, #esquerda, #direita{
 
   #cima {
   
-    top: 0.9em;
+    top: 2em;
     
   }
   
   #baixo {
     
     
-    bottom: 0.9em;
+    bottom: 2em;
     
     
   }
@@ -278,7 +278,7 @@ div #cima, #baixo, #esquerda, #direita{
   #esquerda {
     
     
-    left: 0.9em;
+    left: 1.2em;
   
     
     
@@ -287,7 +287,7 @@ div #cima, #baixo, #esquerda, #direita{
   #direita{
     
     
-    right: 0.9em;
+    right: 1.2em;
     
     
   }
@@ -295,9 +295,9 @@ div #cima, #baixo, #esquerda, #direita{
 
   .cir{
   
-    width: 2em;
+    width: 2.5em;
     
-    height: 2em;
+    height: 2.5em;
     
     
   }
@@ -337,24 +337,24 @@ div #cima, #baixo, #esquerda, #direita{
   }
 
   #c1{
-    top: 0.9em;
+    top: 2em;
     
   }
   
   #c2{
     
-    right: 0.9em;
+    right: 1.2em;
     
   }
   
   #c3{
-    bottom: 0.9em;
+    bottom: 2em;
  
   }
   
   #c4{
     
-    left: 0.9em;
+    left: 1.2em;
     
   }
 
@@ -368,12 +368,14 @@ div #cima, #baixo, #esquerda, #direita{
   #setas{
 
     bottom: 1.2em;
-  
+    width: 43vw;
+
+    left: 0.99em;
   }
 
   #circulos{
-    
+    width: 43vw;
     bottom: 1.2em;
-    
+    right: 0.99em;
   }
 }
