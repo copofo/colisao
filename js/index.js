@@ -39,7 +39,10 @@ function updateBlock(){
   if(movLeft){
     posX = posX - (1 + speed2);
     if(posX + canvas.width < canvas.width){
+      
       posX = posX + 1 + speed2
+      
+    
     }
     
   }
@@ -47,12 +50,14 @@ function updateBlock(){
     posX = posX + 1 + speed2;
     if(posX + sizeWidth > canvas.width){
      posX = posX - 1 - speed2
+     
     }
   }
   if(movBottom){
     posY = posY + 0.35 + speed;
     if(posY + sizeHeight > canvas.height){
       posY = posY - 0.35 - speed;
+        
     }
     
   }
@@ -61,6 +66,7 @@ function updateBlock(){
   }
   if(posY + canvas.height < canvas.height){
     posY = posY + 0.35 + speed;
+    
   }
   
 }
