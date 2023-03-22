@@ -253,3 +253,127 @@ div #cima, #baixo, #esquerda, #direita{
 
 }
 
+@media (max-width: 600px){
+
+  div #cima, #baixo, #esquerda, #direita{
+    width: 2em;
+    height: 2em;
+    border: 0.09em solid black;
+  }
+
+  #cima {
+  
+    top: 0.9em;
+    
+  }
+  
+  #baixo {
+    
+    
+    bottom: 0.9em;
+    
+    
+  }
+  
+  #esquerda {
+    
+    
+    left: 0.9em;
+  
+    
+    
+  }
+  
+  #direita{
+    
+    
+    right: 0.9em;
+    
+    
+  }
+
+
+  .cir{
+  
+    width: 2em;
+    
+    height: 2em;
+    
+    
+  }
+
+  #tri{
+  
+    
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 1em solid green;
+    
+    
+    
+  }
+  
+  
+  #qua{
+    
+    border: 0.9em solid pink;
+    
+    font-size: 0.6em;
+    
+  }
+  
+  #circ{
+    width: 1.2em;
+    height: 1.2em;
+  
+  }
+  
+  #x{
+    
+    
+    font-size: 1.5em;
+    
+    
+  }
+
+  #c1{
+    top: 0.9em;
+    
+  }
+  
+  #c2{
+    
+    right: 0.9em;
+    
+  }
+  
+  #c3{
+    bottom: 0.9em;
+ 
+  }
+  
+  #c4{
+    
+    left: 0.9em;
+    
+  }
+
+  #canvas{
+  
+   
+    height: 70vh;
+    width: 92vw;
+  }
+
+  #setas{
+
+    bottom: 1.2em;
+  
+  }
+
+  #circulos{
+    
+    bottom: 1.2em;
+    
+  }
+}
