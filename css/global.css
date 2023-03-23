@@ -13,7 +13,7 @@
 
 body{
   height: 100%;
-  background-color: skyblue;
+  background-color: #003340;
 }
 
 
@@ -59,7 +59,7 @@ body{
   
   height: 23vh;
   
-  border: 0.09em solid black;
+  background-color: transparent;
   
   position: absolute;
   
@@ -136,7 +136,7 @@ div #cima, #baixo, #esquerda, #direita{
   
   height: 23vh;
   
-  border: 0.09em solid black;
+  background-color: transparent;
   
   position: absolute;
   
