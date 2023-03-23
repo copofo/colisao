@@ -38,8 +38,8 @@ var blockX = canvas.width / 2 - 25;
 var blockY = canvas.height / 2 - 25;
 var contWidth;
 
-var velCima = 0.76
-var velDir = 2
+var velCima = 1
+var velDir = 3.3
 
 
 var coords = canvas.getBoundingClientRect()
