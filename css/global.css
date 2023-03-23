@@ -446,3 +446,10 @@ div #cima, #baixo, #esquerda, #direita{
   bottom: 15.4em;
   right: 1.2em;
 }
+
+#back{
+  
+  position: absolute;
+  bottom: 15.4em;
+  left:  1.2em;
+}

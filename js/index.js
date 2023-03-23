@@ -9,6 +9,15 @@ const f = {
 var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext("2d");
 
+var next = document.getElementById('next')
+
+
+next.addEventListener('click', ()=>{
+  
+  window.location.href = "index22.html"
+  
+})
+
 function coliser(){
   if(posX + sizeWidth > blockX && posX < blockX + sizeWidth && posY + sizeHeight > blockY && posY < blockY + sizeHeight){
     
