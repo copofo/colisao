@@ -12,11 +12,7 @@ var ctx = canvas.getContext("2d");
 var next = document.getElementById('next')
 
 
-next.addEventListener('click', ()=>{
-  
-  window.location.href = "../pg/index2.html"
-  
-})
+
 
 function coliser(){
   if(posX + sizeWidth > blockX && posX < blockX + sizeWidth && posY + sizeHeight > blockY && posY < blockY + sizeHeight){
@@ -215,9 +211,6 @@ function loop(){
 }
 
 loop();
-
-
-
 
 
 
