@@ -14,7 +14,7 @@ var next = document.getElementById('next')
 
 next.addEventListener('click', ()=>{
   
-  window.location.href = "index22.html"
+  window.location.href = "../pg/index2.html"
   
 })
 
