@@ -10,6 +10,7 @@
 
 
 
+
 body{
   height: 100%;
   background-color: skyblue;
@@ -383,3 +384,60 @@ div #cima, #baixo, #esquerda, #direita{
     right: 0.99em;
   }
 }
+
+@media (min-width: 600px){
+  
+  #canvas{
+  
+  width: 98vw;
+  height: 95vh;
+  z-index: 0;
+  
+  
+}
+
+
+#setas{
+  
+  
+  width: 23vw;
+  
+  height: 50vh;
+  
+  border: none;
+  
+  position: absolute;
+  
+  bottom: 1.7em;
+  
+  left: 0.8em;
+  
+  z-index: 1000;
+  
+  background-color: transparent;
+  
+  
+}
+
+#circulos{
+  width: 23vw;
+  
+  height: 50vh;
+  
+  border: none;
+  
+  position: absolute;
+  
+  bottom: 1.7em;
+  
+  right: 0.8em;
+  
+  background-color: transparent;
+  
+  
+}
+  
+  
+  
+}
+

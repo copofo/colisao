@@ -12,10 +12,10 @@ var ctx = canvas.getContext("2d");
 function coliser(){
   if(posX + sizeWidth > blockX && posX < blockX + sizeWidth && posY + sizeHeight > blockY && posY < blockY + sizeHeight){
     
-    if(movTop){posY = posY + 0.35 + speed}
-    if(movRigth){posX = posX - 1 - speed2}
-    if(movLeft){posX = posX + 1 + speed2}
-    if(movBottom){posY = posY - 0.35 - speed}
+    if(movTop){posY = posY + velCima + speed}
+    if(movRigth){posX = posX - velDir - speed2}
+    if(movLeft){posX = posX + velDir + speed2}
+    if(movBottom){posY = posY - velCima - speed}
     objColor = "#f00"
     
     
@@ -24,48 +24,61 @@ function coliser(){
   }
 }
 
+
+
 var movTop = movLeft = movBottom = movRigth = false
 var speed = 0;
 var speed2 = 0;
-var sizeWidth = 50
-var sizeHeight = 13
-var posX = 50
-var posY = 50
+var sizeWidth = 25
+var sizeHeight = 7.5
+var posX = 0
+var posY = 0
 var objColor = "#00f"
 var blockX = canvas.width / 2 - 25;
 var blockY = canvas.height / 2 - 25;
+var contWidth;
+
+var velCima = 0.76
+var velDir = 2
+
+
+var coords = canvas.getBoundingClientRect()
+
+ctx.fillRect(posX,posY,sizeWidth,sizeHeight)
+
+
 
 function updateBlock(){
   if(movLeft){
-    posX = posX - (1 + speed2);
+    posX = posX - (velDir + speed2);
     if(posX + canvas.width < canvas.width){
       
-      posX = posX + 1 + speed2
+      posX = posX + velDir + speed2
       
     
     }
     
   }
   if(movRigth){
-    posX = posX + 1 + speed2;
+    posX = posX + velDir + speed2;
     if(posX + sizeWidth > canvas.width){
-     posX = posX - 1 - speed2
+     posX = posX - velDir - speed2
      
     }
   }
   if(movBottom){
-    posY = posY + 0.35 + speed;
+    posY = posY + velCima + speed;
     if(posY + sizeHeight > canvas.height){
-      posY = posY - 0.35 - speed;
+      posY = posY - velCima - speed;
         
     }
     
   }
   if(movTop){
-    posY = posY - 0.35 - speed;
+    posY = posY - velCima - speed;
   }
   if(posY + canvas.height < canvas.height){
-    posY = posY + 0.35 + speed;
+    posY = posY + velCima + speed;
     
   }
   
@@ -74,8 +87,8 @@ function updateBlock(){
 
 f.c3().addEventListener('touchstart', ()=>{
   f.c3().style.background = "black"
-  speed = 0.35;
-  speed2 = 1;
+  speed = velCima;
+  speed2 = velDir;
 })
 
 f.c3().addEventListener('touchend', ()=>{
@@ -131,20 +144,74 @@ f.right().addEventListener('touchend', ()=>{
 function update(){
   updateBlock();
   coliser();
+  
 }
+
+function draw2(){
+  
+    sizeWidth = 10
+    sizeHeight = 10
+    
+    ctx.clearRect(0,0,canvas.width, canvas.height)
+    ctx.fillStyle = "#000"
+    ctx.fillRect(blockX,blockY,sizeWidth,sizeHeight)
+    ctx.fillStyle = objColor;
+    ctx.fillRect(posX,posY,sizeWidth,sizeHeight)
+  
+}
+
 
 function draw(){
-  ctx.clearRect(0,0,canvas.width, canvas.height)
-  ctx.fillStyle = "#000"
-  ctx.fillRect(blockX,blockY,sizeWidth,sizeHeight)
-  ctx.fillStyle = objColor;
-  ctx.fillRect(posX,posY,sizeWidth,sizeHeight)
+  
+  
+    ctx.clearRect(0,0,canvas.width, canvas.height)
+    ctx.fillStyle = "#000"
+    ctx.fillRect(blockX,blockY,sizeWidth,sizeHeight)
+    ctx.fillStyle = objColor;
+    ctx.fillRect(posX,posY,sizeWidth,sizeHeight)
+  
+  
+  
 }
 
+
+
+
+
+
 function loop(){
+  
   window.requestAnimationFrame(loop, canvas)
-  update()
-  draw()
+    
+    
+    
+    if(coords.width > 379.21429443359375){
+    
+      draw2()
+    
+    } else {
+      
+      draw()
+      
+    }
+    
+  
+    update()
+    
+    
+    
+  
+  
+  
 }
 
 loop();
+
+
+
+
+
+
+
+
+
